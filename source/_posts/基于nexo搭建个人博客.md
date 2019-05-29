@@ -395,6 +395,29 @@ reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作�
 wechatpay: /my_images/wechatpay.png
 alipay: /my_images/alipay.png
 
+**打赏功能可能存在闪动的bug需要进行修复：**
+修改next/source/css/_common/components/post/post-reward.styl，注释掉以下代码：
+```bash
+/*
+#wechat:hover p{
+    animation: roll 0.1s infinite linear;
+    -webkit-animation: roll 0.1s infinite linear;
+    -moz-animation: roll 0.1s infinite linear;
+}
+#alipay:hover p{
+    animation: roll 0.1s infinite linear;
+    -webkit-animation: roll 0.1s infinite linear;
+    -moz-animation: roll 0.1s infinite linear;
+}
+#bitcoin:hover p {
+    animation: roll 0.1s infinite linear;
+    -webkit-animation: roll 0.1s infinite linear;
+    -moz-animation: roll 0.1s infinite linear;
+}
+*/
+```
+
+
 ### 订阅公众号
 >wechat_subscriber:
   enabled: true
