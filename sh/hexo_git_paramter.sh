@@ -1,5 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
 hexo clean
 hexo d -g
 git add .
