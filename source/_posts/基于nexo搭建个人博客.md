@@ -100,9 +100,8 @@ $ SSH -T git@github.com
 ### Hexo与github远程关联
 #### 配置Deployment
 找到musing_blog文件夹下的_config.yml，修改其中的相关代码如下：
->
- #Deployment
- ##Docs: https://hexo.io/docs/deployment.html
+>\#Deployment
+ \##Docs: https://hexo.io/docs/deployment.html
  deploy:
    type: git
    repo: git@github.com:Musing93/Musing93.github.io.git
@@ -153,7 +152,7 @@ theme: next
  \#Schemes
  \#scheme: Muse
  \#scheme: Mist
- \scheme: Pisces
+ scheme: Pisces
  \#scheme: Gemini
 
 *ps:本博客选用了next主题的Pisces风格*
