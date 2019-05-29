@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/home/jk/Downloads/1.png">
 <meta property="og:image" content="http://yoursite.com/home/jk/Downloads/2.png">
-<meta property="og:updated_time" content="2019-05-29T12:48:16.115Z">
+<meta property="og:updated_time" content="2019-05-29T12:55:11.779Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于nexo搭建个人博客">
 <meta name="twitter:description" content="安装Hexo首先检查电脑中是否存在以下应用程序： 1.Git2.Node.js 终端输入以下命令,检查是否已安装相应程序：1234$ git --versiongit version 2.7.4$ node -vv12.2.0 安装Node.js如果本电脑中有Node.js，可以跳过此步骤；若没有nodejs，则需要先安装.12345678910111213141516//安装nodejs和npm">
@@ -383,9 +383,8 @@
 <p>连接成功后，在github上建立一个仓库(repository),仓库名称必须为[github_user].github.io 。例如，本博客建立的仓库名为<strong>musing93.github.io</strong></p>
 <h3 id="Hexo与github远程关联"><a href="#Hexo与github远程关联" class="headerlink" title="Hexo与github远程关联"></a>Hexo与github远程关联</h3><h4 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h4><p>找到musing_blog文件夹下的_config.yml，修改其中的相关代码如下：</p>
 <blockquote>
+<p>#Deployment<br> ##Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a><br> deploy:<br>   type: git<br>   repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:Musing93/Musing93.github.io.git<br>   branch: master</p>
 </blockquote>
-<p> #Deployment</p>
-<p> ##Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a><br> deploy:<br>   type: git<br>   repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:Musing93/Musing93.github.io.git<br>   branch: master</p>
 <h4 id="本地部署，并提交文件到github"><a href="#本地部署，并提交文件到github" class="headerlink" title="本地部署，并提交文件到github"></a>本地部署，并提交文件到github</h4><p>终端输入以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#删除旧的public文件</span></span><br><span class="line">$ hexo clean</span><br><span class="line"><span class="comment">#生成新的public文件</span></span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
 <p>若想先本地查看<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#本地使用浏览器查看博客</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
 <p>若要在网页上查看：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#开始部署</span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
@@ -396,7 +395,7 @@
 <p><em>ps: theme这类栏目的冒号后面要有一个空格</em></p>
 <p>再修改themes/next目录下的_config.yml文件，选择需要使用的主题：</p>
 <blockquote>
-<p>#—————————————————————<br> #Scheme Settings<br> #—————————————————————<br> #Schemes<br> #scheme: Muse<br> #scheme: Mist<br> \scheme: Pisces<br> #scheme: Gemini</p>
+<p>#—————————————————————<br> #Scheme Settings<br> #—————————————————————<br> #Schemes<br> #scheme: Muse<br> #scheme: Mist<br> scheme: Pisces<br> #scheme: Gemini</p>
 </blockquote>
 <p><em>ps:本博客选用了next主题的Pisces风格</em></p>
 <h3 id="博客的本地测试与云端查看"><a href="#博客的本地测试与云端查看" class="headerlink" title="博客的本地测试与云端查看"></a>博客的本地测试与云端查看</h3><p>博客通常有<strong>本地测试</strong>与<strong>云端查看</strong>两种方式，为了简化以后的操作，可以将相应的终端命令写成bash文件。</p>
