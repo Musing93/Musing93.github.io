@@ -443,8 +443,40 @@ hexo（hexo工程文件）-> themes -> next -> source -> css -> _custom ，找�
 
 最后运行之前写好的同步文件，即可本地查看博客、也可同步到云端！
 
+## 注意事项
+### 问题1：安装nvm出现“nvm is already installed in /home/jk/.nvm, trying to update using git”
 
+解决办法1（卸载nvm）：
+```bash
+#Remove nvm,you need to know the nvm path you install .
+sudo rm -rf ~/.nvm
+hash -r
+ 
+#Remove latest node version
+sudo npm uninstall -g n
+ 
+#Remove n
+cd ~/src/n && sudo make uninstall && cd .. && sudo rm -r n
+ 
+#Remove latest nodejs version
+sudo apt-get purge -y nodejs npm
+ 
+#Remove nodejs-legacy version
+sudo apt-get purge -y nodejs-legacy npm
+ 
+sudo apt -y autoremove
+ 
+#Remove nodejs files
+sudo rm -rf /usr/local/lib/node_modules/npm
+sudo rm -rf /usr/local/lib/node_modules/n
+sudo rm -f /usr/local/bin/node
+sudo rm -f /usr/local/bin/npm
+sudo rm -f /usr/bin/node
+sudo rm -rf /usr/local/n/versions/node
+```
 
+### 问题2：git提交时报警告“Changes not staged for commit:"
+大概率是运行git commit 、 git add 或包含git命令的bash代码时，终端所在的路径不对，应该在musing_blog目录下运行git命令，这样才能提交所有变化的文件！
 
 -----
 博客的优化功能还有许多，目前也只是实现了博客的基本内容，后续再继续更新吧！
