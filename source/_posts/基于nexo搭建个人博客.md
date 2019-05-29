@@ -4,7 +4,7 @@ date: 2019-05-29 17:25:55
 tags: 
 - nexo
 - github
-categories: 博客
+categories: 搭建博客
 ---
 
 ## 安装Hexo
