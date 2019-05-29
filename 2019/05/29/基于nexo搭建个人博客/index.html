@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/home/jk/Downloads/1.png">
 <meta property="og:image" content="http://yoursite.com/home/jk/Downloads/2.png">
-<meta property="og:updated_time" content="2019-05-29T12:29:44.500Z">
+<meta property="og:updated_time" content="2019-05-29T12:36:21.617Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于nexo搭建个人博客">
 <meta name="twitter:description" content="安装Hexo首先检查电脑中是否存在以下应用程序： 1.Git2.Node.js 终端输入以下命令,检查是否已安装相应程序：1234$ git --versiongit version 2.7.4$ node -vv12.2.0 安装Node.js如果本电脑中有Node.js，可以跳过此步骤；若没有nodejs，则需要先安装.12345678910111213141516//安装nodejs和npm">
@@ -396,14 +396,8 @@
 <p><em>ps: theme这类栏目的冒号后面要有一个空格</em></p>
 <p>再修改themes/next目录下的_config.yml文件，选择需要使用的主题：</p>
 <blockquote>
+<p>#—————————————————————<br> #Scheme Settings<br> #—————————————————————<br> #Schemes<br> #scheme: Muse<br> #scheme: Mist<br> \scheme: Pisces<br> #scheme: Gemini</p>
 </blockquote>
-<p> #—————————————————————</p>
-<p> #Scheme Settings</p>
-<p> #—————————————————————</p>
-<p> #Schemes</p>
-<p> #scheme: Muse</p>
-<p> #scheme: Mist<br> scheme: Pisces</p>
-<p> #scheme: Gemini</p>
 <p><em>ps:本博客选用了next主题的Pisces风格</em></p>
 <h3 id="博客的本地测试与云端查看"><a href="#博客的本地测试与云端查看" class="headerlink" title="博客的本地测试与云端查看"></a>博客的本地测试与云端查看</h3><p>博客通常有<strong>本地测试</strong>与<strong>云端查看</strong>两种方式，为了简化以后的操作，可以将相应的终端命令写成bash文件。</p>
 <h4 id="本地测试bash文件"><a href="#本地测试bash文件" class="headerlink" title="本地测试bash文件"></a>本地测试bash文件</h4><p><strong>blog_localtest.sh</strong>：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo s</span><br><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
@@ -521,6 +515,7 @@ avatar: /images/avatar.png</li>
 <h3 id="配置背景"><a href="#配置背景" class="headerlink" title="配置背景"></a>配置背景</h3><p>首先下载背景图片：<a href="http://90sheji.com/taobao/256836.html】(http://90sheji.com/taobao/256836.html)" target="_blank" rel="noopener">http://90sheji.com/taobao/256836.html】(http://90sheji.com/taobao/256836.html)</a><br>放到 hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; images 的路径下；<br>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt; _custom ，找到路径下的custom.styl文件，在文件的最上方加上一代码 body { background:url(/images/backGround.jpg（这是你之前加的背景图片的名字）);}就完事了。<br>(地址可以自己指定)</p>
 <p>###关联评论系统<br>参考官方：<a href="http://theme-next.iissnan.com/third-party-services.html#yungentie" target="_blank" rel="noopener">http://theme-next.iissnan.com/third-party-services.html#yungentie</a></p>
 <p>最后运行之前写好的同步文件，即可本地查看博客、也可同步到云端！</p>
+<hr>
 <p>博客的优化功能还有许多，目前也只是实现了博客的基本内容，后续再继续更新吧！</p>
 
       
