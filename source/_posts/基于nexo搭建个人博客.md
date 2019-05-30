@@ -384,7 +384,7 @@ type: categories
 \- test.test
 
 则会生成分类test以及其子类test.test：
-![](../images/hexo下搭建博客/2.png) 
+![](./基于nexo搭建个人博客/2.png) 
 
 ## 侧边栏社交、打赏、访问统计以及背景设置
 打开/theme/next/下的_config.yml文件。
