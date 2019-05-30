@@ -88,7 +88,7 @@
 <meta property="og:description" content="安装Hexo首先检查电脑中是否存在以下应用程序： 1.Git2.Node.js 终端输入以下命令,检查是否已安装相应程序：1234$ git --versiongit version 2.7.4$ node -vv12.2.0 安装Node.js如果本电脑中有Node.js，可以跳过此步骤；若没有nodejs，则需要先安装.12345678910111213141516//安装nodejs和npm">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/Musing93/Musing93.github.io/hexo/source/_posts/%E5%9F%BA%E4%BA%8Enexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/2.png">
-<meta property="og:updated_time" content="2019-05-30T04:04:02.658Z">
+<meta property="og:updated_time" content="2019-05-30T04:08:16.741Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于nexo搭建个人博客">
 <meta name="twitter:description" content="安装Hexo首先检查电脑中是否存在以下应用程序： 1.Git2.Node.js 终端输入以下命令,检查是否已安装相应程序：1234$ git --versiongit version 2.7.4$ node -vv12.2.0 安装Node.js如果本电脑中有Node.js，可以跳过此步骤；若没有nodejs，则需要先安装.12345678910111213141516//安装nodejs和npm">
@@ -519,7 +519,7 @@ avatar: /images/avatar.png</li>
 <h3 id="问题3-博客中插入的图片在本地能显示，网页端无法显示。"><a href="#问题3-博客中插入的图片在本地能显示，网页端无法显示。" class="headerlink" title="问题3: 博客中插入的图片在本地能显示，网页端无法显示。"></a>问题3: 博客中插入的图片在本地能显示，网页端无法显示。</h3><p><strong>解决办法1</strong><br>1.修改主目录下的_config.yml：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">psot_asset_folder:  <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
 <p>2.安装图片上传插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure></p>
 <p>3.建立博客<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">"new"</span></span><br></pre></td></tr></table></figure></p>
-<p>在目录下会发现不仅生成了对应的new.md文件，还生成了同名的文件夹new。将需要上传的图片放入该文件夹。<br>4.插入图片<br>图片的插入格式为<br>![](new/2.png)<br>以下为错误的插入格式：<br>~~![](./new/2.png) ~~<br>~~![](/new/2.png) ~~<br><strong>解决办法2</strong><br>将图片上传到github，通过插入相应的链接来引用图片</p>
+<p>在目录下会发现不仅生成了对应的new.md文件，还生成了同名的文件夹new。将需要上传的图片放入该文件夹。<br>4.插入图片<br>图片的插入格式为<br>![](new/2.png)<br>以下为错误的插入格式：<br><del>./new/2.png</del><br><del>/new/2.png</del><br><strong>解决办法2</strong><br>将图片上传到github，通过插入相应的链接来引用图片</p>
 <hr>
 <p>博客的优化功能还有许多，目前也只是实现了博客的基本内容，后续再继续更新吧！</p>
 
