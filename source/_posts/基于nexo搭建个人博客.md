@@ -384,6 +384,7 @@ type: categories
 \- test.test
 
 则会生成分类test以及其子类test.test：
+
 ![](https://raw.githubusercontent.com/Musing93/Musing93.github.io/hexo/source/_posts/%E5%9F%BA%E4%BA%8Enexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/2.png) 
 
 
@@ -465,6 +466,54 @@ hexo（hexo工程文件）-> themes -> next -> source -> css -> _custom ，找�
 参考官方：[http://theme-next.iissnan.com/third-party-services.html#yungentie](http://theme-next.iissnan.com/third-party-services.html#yungentie)
 
 最后运行之前写好的同步文件，即可本地查看博客、也可同步到云端！
+
+### 侧边栏及图标设置
+
+要在侧边栏添加自定义栏目，可参见以下步骤(以加入hobby栏目为例)：
+
+1. 在主题下的_config.yml文件中修改：
+
+   ```bash
+   menu:
+     home: / || home
+     about: /about/ || user
+     tags: /tags/ || tags
+     categories: /categories/ || th
+     archives: /archives/ || archive
+     schedule: /schedule/ || calendar
+     hobby: /hobby/ || camera-retro
+     #sitemap: /sitemap.xml || sitemap
+     #commonweal: /404/ || heartbeat
+   ```
+
+2. 修改图标
+
+   图标的别名可在图标库中查找：[图标库](https://fontawesome.com/icons?d=gallery)
+
+   例如，相机图标的别名为**camera-retro**
+
+   因此第一步中hobby修改的图表名为 camera-retro
+
+3. 建立文件
+
+   ```bash
+   $ hexo n page hobby
+   ```
+
+   找到hobby文件夹下的index.md文件，修改如下：
+
+   >title: 爱好
+   >date: 2019-05-30 15:05:14
+   >
+   >type: hobby
+
+   修改后博客的侧边栏如图所示：
+
+   ![3](基于nexo搭建个人博客/3.png)
+
+   
+
+   
 
 ## 注意事项
 ### 问题1：安装nvm出现“nvm is already installed in /home/jk/.nvm, trying to update using git”
