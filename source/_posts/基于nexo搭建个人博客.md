@@ -87,11 +87,9 @@ $ hexo init musing_blog
 $ cd musing_blog
 $ npm install 
 ```
-安装完成后，在终端输入以下命令，最后在浏览器中输入网址http://localhost:4000， 可以看到hexo页面，见下图：
-![](/home/jk/musing_blog/source/images/hexo下搭建博客/1.png) 
+安装完成后，在终端输入以下命令，最后在浏览器中输入网址http://localhost:4000， 可以看到hexo页面.
 </br>
-</br>
----
+
 ## Github Page托管
 这里假设你已经有了github账号，并且为本机地址配置了SSH，如果没有，可以参考我的csdn博客：[ubuntu16下github配置](https://blog.csdn.net/weixin_37058227/article/details/90291368)
 **测试github连接是否成功**
