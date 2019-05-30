@@ -79,20 +79,21 @@
 
 
 
-<meta name="description" content="ubuntu下载百度网盘文件https://www.jianshu.com/p/91fa28072bc7">
+<meta name="description" content="这篇博客的目的是整理ubuntu下一些比较实用的小工具，提高用户的工作效率。  百度网盘文件下载 安装chrome插件baiduexporter  安装Aria2Aria2是我目前发现下载百度网盘最快的插件了 12$ sudo apt update $ sudo apt install aria2  下载文件  使用chrome打开网页端网盘，选择导出MO.app-文本导出    将显示的文件内容">
 <meta name="keywords" content="ubuntu,工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubuntu工具汇总">
 <meta property="og:url" content="http://yoursite.com/2019/05/29/ubuntu下的工具汇总/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="ubuntu下载百度网盘文件https://www.jianshu.com/p/91fa28072bc7">
+<meta property="og:description" content="这篇博客的目的是整理ubuntu下一些比较实用的小工具，提高用户的工作效率。  百度网盘文件下载 安装chrome插件baiduexporter  安装Aria2Aria2是我目前发现下载百度网盘最快的插件了 12$ sudo apt update $ sudo apt install aria2  下载文件  使用chrome打开网页端网盘，选择导出MO.app-文本导出    将显示的文件内容">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/05/29/ubuntu下的工具汇总/2.png">
-<meta property="og:updated_time" content="2019-05-30T03:49:26.872Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/29/ubuntu下的工具汇总/1.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/29/ubuntu下的工具汇总/baidu2.png">
+<meta property="og:updated_time" content="2019-05-30T06:50:06.019Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu工具汇总">
-<meta name="twitter:description" content="ubuntu下载百度网盘文件https://www.jianshu.com/p/91fa28072bc7">
-<meta name="twitter:image" content="http://yoursite.com/2019/05/29/ubuntu下的工具汇总/2.png">
+<meta name="twitter:description" content="这篇博客的目的是整理ubuntu下一些比较实用的小工具，提高用户的工作效率。  百度网盘文件下载 安装chrome插件baiduexporter  安装Aria2Aria2是我目前发现下载百度网盘最快的插件了 12$ sudo apt update $ sudo apt install aria2  下载文件  使用chrome打开网页端网盘，选择导出MO.app-文本导出    将显示的文件内容">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/29/ubuntu下的工具汇总/1.png">
 
 
 
@@ -242,6 +243,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-hobby">
+          <a href="/hobby/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-camera-retro"></i> <br>
+            
+            hobby
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -369,8 +380,48 @@
       
 
       
-        <h2 id="ubuntu下载百度网盘文件"><a href="#ubuntu下载百度网盘文件" class="headerlink" title="ubuntu下载百度网盘文件"></a>ubuntu下载百度网盘文件</h2><p><a href="https://www.jianshu.com/p/91fa28072bc7" target="_blank" rel="noopener">https://www.jianshu.com/p/91fa28072bc7</a><br><img src="/2019/05/29/ubuntu下的工具汇总/2.png" alt> </p>
+        <p>这篇博客的目的是整理ubuntu下一些比较实用的小工具，提高用户的工作效率。<br><br></p>
+<hr>
+<h2 id="百度网盘文件下载"><a href="#百度网盘文件下载" class="headerlink" title="百度网盘文件下载"></a>百度网盘文件下载</h2><ol>
+<li>安装chrome插件<a href="https://chrome.google.com/webstore/search/BaiduExporter?hl=en-US" target="_blank" rel="noopener">baiduexporter</a> </li>
+<li><p>安装Aria2<br>Aria2是我目前发现下载百度网盘最快的插件了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt update </span><br><span class="line">$ sudo apt install aria2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>下载文件</p>
+<ul>
+<li>使用chrome打开网页端网盘，选择导出<strong>MO.app-文本导出</strong><br><img src="/2019/05/29/ubuntu下的工具汇总/1.png" alt><br><img src="/2019/05/29/ubuntu下的工具汇总/baidu2.png" alt> </li>
+</ul>
+</li>
+<li>将显示的文件内容复制下来</li>
+<li>粘贴到终端，即可下载<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ aria2c -c -s10 -k1M -x16 --<span class="built_in">enable</span>-rpc=<span class="literal">false</span> -o  ********</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><nbsp></nbsp></p>
+<nbsp>
 
+<hr>
+<h2 id="Linux命令搜索工具"><a href="#Linux命令搜索工具" class="headerlink" title="Linux命令搜索工具"></a>Linux命令搜索工具</h2><ol>
+<li><p>chrome扩展工具</p>
+<ul>
+<li>在chrome商店中安装“开源中国”扩展程序</li>
+<li>点击进入扩展程序，点击右上角的<strong>命令</strong>即可搜索Linux的命令用法</li>
+</ul>
+</li>
+<li><p>开源项目<br>有一个很好的Linux命令搜索的开源项目：<a href="https://github.com/jaywcjlove/linux-command" target="_blank" rel="noopener">linux-command</a> </p>
+</li>
+</ol>
+<hr>
+<h2 id="vscode"><a href="#vscode" class="headerlink" title="vscode"></a>vscode</h2><p>vscode 不仅是一款变成软件，同时还支持markdown文件编辑、预览，支持快速插入目录等操作</p>
+<ol>
+<li>下载vscode<br>点击此处下载<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">vscode</a></li>
+<li>安装markdown插件<br>在左侧的侧边栏找到扩展资源库，搜索安装 <strong>Markdown TOC</strong>、<strong>Markdown Preview Enhanced</strong></li>
+</ol>
+<hr>
+<h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><p>Typora是目前公认编写markdown文件最好的编辑器, 最大的特点就是“所见即所得”<br>安装教程参考：<a href="https://support.typora.io/Typora-on-Linux/" target="_blank" rel="noopener">Typora</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># or use</span></span><br><span class="line"><span class="comment"># sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE</span></span><br><span class="line">$ wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -</span><br><span class="line"></span><br><span class="line"><span class="comment"># add Typora's repository</span></span><br><span class="line">$ sudo add-apt-repository <span class="string">'deb https://typora.io/linux ./'</span></span><br><span class="line">$ sudo apt-get update</span><br><span class="line"></span><br><span class="line"><span class="comment"># install typora</span></span><br><span class="line">$ sudo apt-get install typora</span><br></pre></td></tr></table></figure>
+<p>升级：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># upgrade all packages include Typora</span></span><br><span class="line">$ sudo apt-get upgrade</span><br></pre></td></tr></table></figure></p>
+<p>通过勾选view中的outline选项可以打开侧边栏，显示文章的目录！</p>
+</nbsp>
       
     </div>
     
@@ -556,7 +607,7 @@
                   <span class="links-of-author-item">
                     <a href="https://github.com/Musing93" target="_blank" title="GitHub">
                       
-                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
             </div>
@@ -566,6 +617,20 @@
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/weixin_37058227" title="CSDN" target="_blank">CSDN</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -583,7 +648,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ubuntu下载百度网盘文件"><span class="nav-number">1.</span> <span class="nav-text">ubuntu下载百度网盘文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#百度网盘文件下载"><span class="nav-number">1.</span> <span class="nav-text">百度网盘文件下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux命令搜索工具"><span class="nav-number">2.</span> <span class="nav-text">Linux命令搜索工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vscode"><span class="nav-number">3.</span> <span class="nav-text">vscode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Typora"><span class="nav-number">4.</span> <span class="nav-text">Typora</span></a></li></ol></div>
             
 
           </div>
