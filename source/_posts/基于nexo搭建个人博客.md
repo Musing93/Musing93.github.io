@@ -88,8 +88,10 @@ $ cd musing_blog
 $ npm install 
 ```
 安装完成后，在终端输入以下命令，最后在浏览器中输入网址http://localhost:4000， 可以看到hexo页面，见下图：
-![ ](/home/jk/Downloads/1.png  "初始博客示例图")
-
+![](/home/jk/musing_blog/source/images/hexo下搭建博客/1.png) 
+</br>
+</br>
+---
 ## Github Page托管
 这里假设你已经有了github账号，并且为本机地址配置了SSH，如果没有，可以参考我的csdn博客：[ubuntu16下github配置](https://blog.csdn.net/weixin_37058227/article/details/90291368)
 **测试github连接是否成功**
@@ -384,7 +386,7 @@ type: categories
 \- test.test
 
 则会生成分类test以及其子类test.test：
-![](/home/jk/Downloads/2.png) 
+![](/home/jk/musing_blog/source/images/hexo下搭建博客/2.png) 
 
 ## 侧边栏社交、打赏、访问统计以及背景设置
 打开/theme/next/下的_config.yml文件。
