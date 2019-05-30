@@ -55,7 +55,7 @@ type: hobby
 
 <img src="index/hongshaojitui.jpeg" style="zoom:15%" />
 
-## 胡萝卜土豆
+### 胡萝卜土豆
 
 1. 土豆切片、胡萝卜切丝
 2. 土豆焯水
