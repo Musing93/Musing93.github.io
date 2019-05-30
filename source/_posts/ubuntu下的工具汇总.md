@@ -9,3 +9,4 @@ categories: ubuntu
 
 ## ubuntu下载百度网盘文件
 [https://www.jianshu.com/p/91fa28072bc7](https://www.jianshu.com/p/91fa28072bc7)
+![](ubuntu下的工具汇总/2.png) 

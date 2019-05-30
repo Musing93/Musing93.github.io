@@ -384,7 +384,8 @@ type: categories
 \- test.test
 
 则会生成分类test以及其子类test.test：
-![](./基于nexo搭建个人博客/2.png) 
+![](https://raw.githubusercontent.com/Musing93/Musing93.github.io/hexo/source/_posts/%E5%9F%BA%E4%BA%8Enexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/2.png) 
+
 
 ## 侧边栏社交、打赏、访问统计以及背景设置
 打开/theme/next/下的_config.yml文件。
@@ -499,6 +500,31 @@ sudo rm -rf /usr/local/n/versions/node
 
 ### 问题2：git提交时报警告“Changes not staged for commit:"
 大概率是运行git commit 、 git add 或包含git命令的bash代码时，终端所在的路径不对，应该在musing_blog目录下运行git命令，这样才能提交所有变化的文件！
+
+### 问题3: 博客中插入的图片在本地能显示，网页端无法显示。
+**解决办法1**
+1.修改主目录下的_config.yml：
+```bash
+psot_asset_folder:  true
+```
+
+2.安装图片上传插件
+```bahs
+$ npm install hexo-asset-image --save
+```
+3.建立博客
+```bash
+$ hexo n "new"
+```
+在目录下会发现不仅生成了对应的new.md文件，还生成了同名的文件夹new。将需要上传的图片放入该文件夹。
+4.插入图片
+图片的插入格式为
+\!\[](new/2.png) 
+以下为错误的插入格式：
+~~\!\[](./new/2.png) ~~
+~~\!\[](/new/2.png) ~~
+**解决办法2**
+将图片上传到github，通过插入相应的链接来引用图片
 
 -----
 博客的优化功能还有许多，目前也只是实现了博客的基本内容，后续再继续更新吧！
